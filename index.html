@@ -1,5 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head><meta charset="UTF-8"><title>Pixelaae</title></head>
-<body><h1>Bienvenue sur le site de Pixelaae</h1></body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Word Search Solver – Accueil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Word Search Solver</h1>
+    <nav>
+      <a href="index.html" class="actif">Accueil</a>
+      <a href="ressources.html">Ressources</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cadre">
+      <h2>Le projet</h2>
+      <p>
+        Word Search Solver est une application qui résout automatiquement des grilles
+        de mots fléchés / mots mêlés à partir d'une simple image. L'utilisateur charge
+        une photo ou un scan de la grille, l'application la traite, repère les mots à
+        trouver et affiche la grille avec les solutions mises en évidence.
+      </p>
+    </section>
+
+    <section>
+      <h2>Fonctionnement</h2>
+      <div class="grille">
+        <div class="cadre">
+          <h3>1. Image</h3>
+          <p>Chargement de l'image de la grille et de la liste des mots à trouver.</p>
+        </div>
+        <div class="cadre">
+          <h3>2. Prétraitement</h3>
+          <p>Redressement (rotation manuelle possible), nettoyage et binarisation de l'image pour faciliter la lecture.</p>
+        </div>
+        <div class="cadre">
+          <h3>3. Localisation</h3>
+          <p>Détection de la grille, découpage en cases et reconnaissance de chaque lettre.</p>
+        </div>
+        <div class="cadre">
+          <h3>4. Résolution</h3>
+          <p>Recherche des mots dans toutes les directions et affichage du résultat.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cadre" style="margin-top: 28px;">
+      <h2>Fonctionnalités</h2>
+      <ul>
+        <li>Import d'une image de grille (photo ou scan)</li>
+        <li>Rotation manuelle pour corriger l'inclinaison</li>
+        <li>Saisie ou correction manuelle de la liste de mots</li>
+        <li>Localisation de la grille puis traitement automatique</li>
+        <li>Affichage du résultat et sauvegarde de l'image finale</li>
+      </ul>
+      <a href="ressources.html" class="btn">Voir les ressources</a>
+    </section>
+  </main>
+
+  <footer>Projet Word Search Solver</footer>
+
+</body>
 </html>
